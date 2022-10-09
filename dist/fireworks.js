@@ -1,5 +1,5 @@
 class FIREWORKS {
-  constructor({full_screen=false, target_node, amount=5}) {
+  constructor({full_screen=false, target_node, amount=5, background="#000"}) {
     this._set_inner_classes();
 
     this.make_full = full_screen;
@@ -28,7 +28,7 @@ class FIREWORKS {
     this.SPARK_TIME = 2500;
     this.SLEEP_TIME = 5000;
 
-    this.BACKGROUND = "rgb(0, 0, 0)";
+    this.BACKGROUND = background;
     this.RESIDUAL = "rgba(0, 0, 0, 0.1)";
 
     this.ctx = document.createElement("canvas").getContext("2d");
